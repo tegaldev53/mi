@@ -34,6 +34,8 @@ const App = async () => {
 
     await Auth(loginPage);
 
+    await browser.close();
+    return
     // goto pages
     await atcP.goto(url.atc);
     await coP.goto(url.co);

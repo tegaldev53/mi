@@ -1,3 +1,4 @@
-2020/12/10-12:01:56.437 c976 Reusing MANIFEST /home/umar/Dev/Scrapping/MI/mi/data/wd2/Default/Session Storage/MANIFEST-000001
-2020/12/10-12:01:56.441 c976 Recovering log #4
-2020/12/10-12:01:56.441 c976 Reusing old log /home/umar/Dev/Scrapping/MI/mi/data/wd2/Default/Session Storage/000004.log 
+2020/12/10-13:00:09.659 dc8a Reusing MANIFEST /home/umar/Dev/Scrapping/MI/mi/data/wd2/Default/Session Storage/MANIFEST-000001
+2020/12/10-13:00:09.674 dc8a Recovering log #4
+2020/12/10-13:00:09.674 dc8a Reusing old log /home/umar/Dev/Scrapping/MI/mi/data/wd2/Default/Session Storage/000004.log 
+2020/12/10-13:00:09.674 dc8a Delete type=0 #3
