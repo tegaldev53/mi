@@ -39,7 +39,7 @@ const App = async () => {
     await coP.goto(url.co);
 
     // // Timer
-    await Timer('17:50');
+    await Timer('22:50');
 
     /**
      * Cart
