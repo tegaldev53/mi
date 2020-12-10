@@ -4,6 +4,7 @@ puppeteer.use(StealthPlugin());
 const config = require('./src/config/browser');
 const url = require('./src/config/url');
 const target = require('./src/config/target');
+const fetch = require('node-fetch');
 
 // Time
 const Timer = require('./src/time/timer');
@@ -13,7 +14,7 @@ const Auth = require('./src/auth/login');
 
 // Cart
 const Atc = require('./src/cart/atc');
-const Co = require('./src/cart/co');
+// const Co = require('./src/cart/co');
 
 const App = async () => {
     const browser = await puppeteer.launch(config);
@@ -38,17 +39,38 @@ const App = async () => {
     await coP.goto(url.co);
 
     // // Timer
-    await Timer('42:50');
+    await Timer('02:10');
 
     /**
      * Cart
      */
 
+    console.time('add_tocart');
     await Atc(atcP, target, url.atc);
+    console.timeEnd('add_tocart');
 
     console.time('reload-co')
-    await coP.goto(url.co);
+    await coP.goto(url.co, {waitUntil: 'domcontentloaded'});
     console.timeEnd('reload-co')
+
+    console.time('click-tab')
+    await coP.evaluate(() => {
+        return new Promise((res, rej) => {
+            let targetEl;
+
+            let finding = setInterval(() => {
+                targetEl = document.querySelector('.redeem-coupon-tab');
+
+                if (targetEl != null) {
+                    res(true);
+                    clearInterval(finding);
+                    console.log('click')
+                    targetEl.click();
+                }
+            }, 100);
+        });
+    });
+    console.timeEnd('click-tab')
 
     // console.time('co')
     // await Co(coP, url.co);
