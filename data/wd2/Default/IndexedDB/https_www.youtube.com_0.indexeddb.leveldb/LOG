@@ -1,0 +1,5 @@
+2020/12/10-06:36:59.108 39bd Reusing MANIFEST /home/umar/Dev/Scrapping/MI/mi/data/wd2/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/12/10-06:37:01.768 39bd Level-0 table #5: started
+2020/12/10-06:37:01.770 39bd Level-0 table #5: 382 bytes OK
+2020/12/10-06:37:01.774 39bd Delete type=0 #3
+2020/12/10-06:37:01.774 39bd Manual compaction at level-0 from (begin) .. (end); will stop at (end)

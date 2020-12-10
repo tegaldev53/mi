@@ -1,0 +1,8 @@
+2020/12/10-07:36:22.790 531e Reusing MANIFEST /home/umar/Dev/Scrapping/MI/mi/data/wd2/Default/IndexedDB/https_mobile.mi.co.id_0.indexeddb.leveldb/MANIFEST-000001
+2020/12/10-07:36:22.790 531e Recovering log #10
+2020/12/10-07:36:22.790 531e Reusing old log /home/umar/Dev/Scrapping/MI/mi/data/wd2/Default/IndexedDB/https_mobile.mi.co.id_0.indexeddb.leveldb/000010.log 
+2020/12/10-07:37:10.810 545e Level-0 table #14: started
+2020/12/10-07:37:10.810 545e Level-0 table #14: 0 bytes OK
+2020/12/10-07:37:10.812 545e Delete type=0 #10
+2020/12/10-07:37:10.812 545e Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/12/10-07:37:10.812 545e Manual compaction at level-1 from (begin) .. (end); will stop at (end)
