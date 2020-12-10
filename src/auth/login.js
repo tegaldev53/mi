@@ -20,14 +20,16 @@ const login = async (loginPage) => {
                 await loginPage.waitForNavigation()
                 let curUri = await loginPage.url();
 
-                await loginPage.screenshot({path: './public/test.png'});
-
                 console.log(curUri)
-                resolve(true)
-                return;
 
                 if (curUri == successUri) {
                     console.log('login success')
+                    await loginPage.screenshot({path: './public/login-success.png'});
+                    await loginPage.close();
+                    resolve(true);
+                } else {
+                    console.log('login gagal');
+                    await loginPage.screenshot({path: './public/login-gagal.png'});
                     await loginPage.close();
                     resolve(true);
                 }

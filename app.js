@@ -34,14 +34,12 @@ const App = async () => {
 
     await Auth(loginPage);
 
-    await browser.close();
-    return
     // goto pages
     await atcP.goto(url.atc);
     await coP.goto(url.co);
 
     // // Timer
-    await Timer('02:10');
+    await Timer('17:50');
 
     /**
      * Cart
@@ -77,6 +75,9 @@ const App = async () => {
     // console.time('co')
     // await Co(coP, url.co);
     // console.timeEnd('co')
+
+    await coP.screenshot({path: './public/pay.png'});
+    await browser.close();
 }
 
 App();
